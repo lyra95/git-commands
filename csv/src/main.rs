@@ -27,7 +27,7 @@ fn get_deltas(branch: &str) -> Result<()> {
             is_cherrypicked.to_string() + "," + meta
         };
 
-        print!("{}", line);
+        println!("{}", line.trim_end());
     }
 
     Ok(())
