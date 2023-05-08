@@ -7,4 +7,6 @@ git_meta.pdb
 git-csv
 git-csv.exe
 git_csv.pdb
+libgit_compare.rlib
+libgit_meta.rlib
 target/

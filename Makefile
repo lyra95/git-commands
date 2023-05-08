@@ -11,9 +11,9 @@ endif
 .PHONY: clean
 clean: 
 ifeq ($(OS),Windows_NT)
-	del /f /q git-* git_*
+	del /f /q git-* git_* libgit_*.rlib
 else
-	rm -f git-{compare,csv,meta}
+	rm -f git-{compare,csv,meta} libgit_*.rlib
 endif
 
 .PHONY: linux

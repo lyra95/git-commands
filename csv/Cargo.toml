@@ -7,3 +7,7 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0.65"
+clap = { version = "4.0.29", features=["derive"] }
+csv = "1.2.1"
+git-compare = { path = "../compare" }
+git-meta = { path = "../meta" }
