@@ -10,3 +10,4 @@ git_csv.pdb
 libgit_compare.rlib
 libgit_meta.rlib
 target/
+result
