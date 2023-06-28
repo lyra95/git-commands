@@ -25,7 +25,7 @@
 
           src = ./.;
           nativeBuildInputs = [ pkgs.pkg-config ];
-          buildInputs = [ pkgs.openssl ];
+          buildInputs = [ pkgs.openssl] ++ (if pkgs.stdenv.isDarwin then [pkgs.darwin.apple_sdk.frameworks.Security ] else []);
 
           cargoLock.lockFile = ./Cargo.lock;
         };
